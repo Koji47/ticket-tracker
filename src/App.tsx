@@ -1,9 +1,20 @@
-import { useState } from "react";
+import TicketCard from "./component/TicketCard/TicketCard";
+import team from "./data/team";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <div className="app">
+        {team.map((teamMember) => (
+          <TicketCard
+            key={teamMember.id}
+            name={teamMember.name}
+            role={teamMember.role}
+          />
+        ))}
+      </div>
+    </>
+  );
 }
 
 export default App;

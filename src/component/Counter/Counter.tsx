@@ -1,11 +1,26 @@
 import { useState } from "react";
 import "./Counter.scss";
 
-function Counter() {
-  const [count, setCount] = useState(0);
+const Counter = ({}) => {
+  const [count, setCount] = useState<number>(0);
 
-  setCount(count + 1);
-  return <></>;
-}
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  const decrementCount = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+  return (
+    <>
+      <button onClick={decrementCount}>-</button>
+      <div>Ticket Count:</div>
+      <div>{count}</div>
+      <button onClick={incrementCount}>+</button>
+    </>
+  );
+};
 
 export default Counter;
