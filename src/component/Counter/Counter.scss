@@ -1,0 +1,21 @@
+.counter {
+  display: flex;
+  padding: 0.5rem;
+  border: 1px solid black;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 5px 10px 10px -10px #000;
+}
+
+button {
+  margin: 0.5rem;
+  height: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+}

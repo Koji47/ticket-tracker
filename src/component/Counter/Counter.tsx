@@ -15,10 +15,12 @@ const Counter = ({}) => {
   };
   return (
     <>
-      <button onClick={decrementCount}>-</button>
-      <div>Ticket Count:</div>
-      <div>{count}</div>
-      <button onClick={incrementCount}>+</button>
+      <div className="counter">
+        <button onClick={decrementCount}>-</button>
+        <h3>Tickets: </h3>
+        <h3> {count}</h3>
+        <button onClick={incrementCount}>+</button>
+      </div>
     </>
   );
 };

@@ -1,0 +1,20 @@
+.app {
+  margin: 1rem;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(174, 238, 221, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  filter: drop-shadow(5px 5px 10px #000);
+}
+
+h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+}
