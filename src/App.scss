@@ -12,9 +12,17 @@
   filter: drop-shadow(5px 5px 10px #000);
 }
 
+a {
+  all: unset;
+}
+
 h1 {
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 42px;
+}
+
+.nav-links {
+  margin: 0.5rem;
 }
