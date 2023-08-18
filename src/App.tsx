@@ -24,18 +24,21 @@ function App() {
     <HashRouter>
       <>
         <div className="app">
-          <Link className="nav-links" to="/">
+          <Link className="nav-links" to="/ticket-tracker">
             Home
           </Link>
-          <Link className="nav-links" to="/tickets">
+          <Link className="nav-links" to="/ticket-tracker/tickets">
             Tickets
           </Link>
 
           <h1>Ticket Tracker</h1>
           <Routes>
-            <Route path="/" element={home} />
-            <Route path="/tickets" element={teamMembers} />
-            <Route path="/profile/:memberId" element={<TeamProfile />} />
+            <Route path="/ticket-tracker" element={home} />
+            <Route path="/ticket-tracker/tickets" element={teamMembers} />
+            <Route
+              path="/ticket-tracker/profile/:memberId"
+              element={<TeamProfile />}
+            />
           </Routes>
         </div>
       </>
