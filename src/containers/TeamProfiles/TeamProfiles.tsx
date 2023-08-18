@@ -1,6 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import team from "../../data/team";
+import "./TeamProfiles.scss";
 
 const TeamProfile = () => {
   const { memberId } = useParams();

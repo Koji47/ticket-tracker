@@ -1,6 +1,5 @@
 import Counter from "../Counter/Counter";
 import "./TicketCard.scss";
-import React from "react";
 import { Link } from "react-router-dom";
 
 type teamProp = {

@@ -1,10 +1,10 @@
 import TicketCard from "./component/TicketCard/TicketCard";
 import team from "./data/team";
-import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import TeamProfile from "./containers/TeamProfiles/TeamProfiles";
 import TeamNames from "./containers/TeamNames/TeamNames";
 import { Link } from "react-router-dom";
+import "./App.scss";
 
 function App() {
   const teamMembers = team.map((teamMember) => (
@@ -21,7 +21,7 @@ function App() {
   ));
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <>
         <div className="app">
           <Link className="nav-links" to="/">
@@ -39,7 +39,7 @@ function App() {
           </Routes>
         </div>
       </>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
